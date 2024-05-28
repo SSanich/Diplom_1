@@ -1,17 +1,11 @@
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.junit.MockitoJUnitRunner;
 import praktikum.Ingredient;
-import praktikum.Constants;
+import constants.Constants;
 import praktikum.IngredientType;
 
-@RunWith(MockitoJUnitRunner.class)
-
 public class IngredientTest {
-    @Mock
     Ingredient ingredient;
     @Before
     public void setup() {
@@ -20,16 +14,16 @@ public class IngredientTest {
 
     @Test
     public  void ingredientTestGetName (){
-        Assert.assertEquals(Constants.INGREDIENT_NAME_CHEESE, ingredient.getName());
+        Assert.assertEquals("Ошибка в имени добавки",Constants.INGREDIENT_NAME_CHEESE, ingredient.getName());
     }
     @Test
     public  void ingredientTestGetPrice (){
-        Assert.assertEquals(Constants.INGREDIENT_CHEESE_PRICE, ingredient.getPrice(), 0.01);
+        Assert.assertEquals("Ошибка в цене",Constants.INGREDIENT_CHEESE_PRICE, ingredient.getPrice(), 0.01);
     }
 
     @Test
     public void ingredientTestGetType(){
-        Assert.assertEquals(IngredientType.FILLING,ingredient.getType());
+        Assert.assertEquals("Ошибка в типе добавки",IngredientType.FILLING,ingredient.getType());
 
     }
 }
