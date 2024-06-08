@@ -18,7 +18,7 @@ public class IngredientTest {
     }
     @Test
     public  void ingredientTestGetPrice (){
-        Assert.assertEquals("Ошибка в цене",Constants.INGREDIENT_CHEESE_PRICE, ingredient.getPrice(), 0.01);
+        Assert.assertEquals("Ошибка в цене",Constants.INGREDIENT_CHEESE_PRICE, ingredient.getPrice(), Constants.DELTA);
     }
 
     @Test

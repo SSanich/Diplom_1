@@ -17,6 +17,6 @@ public class BunTest {
     }
     @Test
     public  void bunTestGetPrice (){
-        Assert.assertEquals("Ошибка в цене булочки",Constants.BUN_PRICE, bun.getPrice(), 0.01);
+        Assert.assertEquals("Ошибка в цене булочки",Constants.BUN_PRICE, bun.getPrice(), Constants.DELTA);
     }
 }
