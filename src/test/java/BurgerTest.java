@@ -29,7 +29,7 @@ public class BurgerTest {
     @Test
     public void checkSetBun() {
         burger.setBuns(bun);
-        assertEquals(burger.bun, bun);
+        assertEquals(bun, burger.bun);
     }
 
     @Test
@@ -62,7 +62,7 @@ public class BurgerTest {
         Mockito.when(bun.getPrice()).thenReturn(Constants.BUN_PRICE);
         Mockito.when(ingredient.getPrice()).thenReturn(Constants.INGREDIENT_CHEESE_PRICE);
         float expected= 670.00F;
-        assertEquals(expected, burger.getPrice(),0.01);
+        assertEquals(expected, burger.getPrice(),Constants.DELTA);
     }
 
     @Test
