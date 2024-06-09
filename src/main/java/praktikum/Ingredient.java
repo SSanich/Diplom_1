@@ -5,6 +5,8 @@ package praktikum;
  * Ингредиент: начинка или соус.
  * У ингредиента есть тип (начинка или соус), название и цена.
  */
+
+//копипаста булочки
 public class Ingredient {
 
     public IngredientType type;

@@ -30,6 +30,7 @@ public class Burger {
         ingredients.add(newIndex, ingredients.remove(index));
     }
 
+    //  мокириуем   bun.getPrice   и  ingredient.getPrice
     public float getPrice() {
         float price = bun.getPrice() * 2;
 
